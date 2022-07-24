@@ -1,0 +1,30 @@
+--Create a Clothes Database
+
+CREATE TABLE Clothes (id INTEGER PRIMARY KEY, Price INTEGER, Type TEXT, Quantity INTEGER, Season TEXT);
+
+INSERT INTO Clothes VALUES (1, 27.99, 'Bikini', 15, 'Summer');
+INSERT INTO Clothes VALUES (2, 21.99, 'Hat', 12, 'ALL');
+INSERT INTO Clothes VALUES (3, 11.50, 'Socks', 13, 'ALL');
+INSERT INTO Clothes VALUES (4, 32.00, 'Flip Flops', 16, 'Summer');
+INSERT INTO Clothes VALUES (5, 129.99, 'Snow Boots', 15, 'Winter');
+INSERT INTO Clothes Values (6, 52.99, 'Board Shorts', 10, 'Summer');
+INSERT INTO Clothes VALUES (7, 49.99, 'Jeans', 9, 'ALL');
+INSERT INTO Clothes VALUES (8, 12.50, 'Tank Top', 20, 'Summer');
+INSERT INTO Clothes VALUES (9, 13.00, 'Mittens', 14, 'Winter');
+INSERT INTO Clothes VALUES (10, 59.99, 'Rain Jacket', 15, 'ALL');
+INSERT INTO Clothes VALUES (11, 160.99, 'Running Shoes', 5, 'ALL');
+INSERT INTO Clothes VALUES (12, 59.99, 'Sweatpants', 17, 'Winter');
+INSERT INTO Clothes VALUES (13, 17.99, 'Underwear', 250, 'ALL');
+INSERT INTO Clothes VALUES (14, 210.99, 'Hiking Boots', 47, 'ALL');
+INSERT INTO Clothes VALUES (15, 7.50, 'Scarf', 129, 'Winter');
+
+
+--Display the databease ordered by Price.
+SELECT * FROM Clothes ORDER BY Price;
+
+
+--Select the max price from the Clothes table.
+SELECT MAX(Price) FROM Clothes;
+
+--What season are Types of Clothes categorized as, limit 14?
+SELECT Type, season FROM Clothes ORDER BY season LIMIT 14;
